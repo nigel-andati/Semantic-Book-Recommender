@@ -15,19 +15,3 @@ This project develops a semantic book recommendation system using 7,000 books fr
 3. Wait ~3 minutes for automatic setup (downloads ~15MB embeddings from Google Drive)
 4. Access the interactive interface via the generated public URL at the bottom of the notebook
 
-## AI Use and External Resources Disclosure
-### AI Tools and Prompts
-• Grok (xAI) and Cursor/ Composer 1.5 
-• Prompts used: 
-  - “Create an interactive Gradio interface for the book recommender featuring text input for queries, sliders for result limits, dropdown filters for emotion/theme/genre, example queries, and formatted results showing book details with relevance scores and classifications.”
-  - "Create a Python script to generate Sentence Transformers embeddings for a 7k book Kaggle dataset. Include data cleaning, genre/mood assignment via keywords, embedding generation, and ZIP file output."
-  - “Resolve runtime errors during book addition to the ChromaDB database, add clear explanations and comments throughout the code, and optimize embedding queries.”
-
-### AI-Assisted Development
-AI was used to produce the create_embeddings_subset.py file and build the initial framework for the Gradio user interface. During development, I used the AI for debugging to identify and resolve configuration errors when integrating Google Drive as a cloud storage equivalent and when creating the search function. Additionally, the AI provided component integration support by supplying the code necessary to connect the vector database with the application frontend (Gradio).
-### Self-Authored Sections
-I used Google Drive for cloud storage to make the project faster and easy for others to run. I independently built the core design, including the semantic search and ranking systems, and manually wrote all the specific genres, moods, and themes used for filtering. My original innovation was combining Sentence Transformers with zero-shot classification to allow the system to understand the actual meaning and emotional intent behind a user's search. I also edited the Gradio UI once generated to improve output.
-
-### External Resources
-• Kaggle Dataset: "7k-books-with-metadata"
-• LLM Course – Build a Semantic Book Recommender (Python, OpenAI, LangChain, Gradio) – freeCodeCamp.org (YouTube, 2025).
